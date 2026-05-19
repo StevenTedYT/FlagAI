@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.local
+.env
+.env.*
+!.env.example
+*.crx
+*.zip
+.DS_Store
+Thumbs.db
