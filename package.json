@@ -8,8 +8,10 @@
     "dev": "vite build --watch",
     "build": "vite build",
     "type-check": "tsc --noEmit",
-    "lint": "eslint src --ext .ts",
-    "format": "prettier --write src"
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src"
   },
   "keywords": [
     "chrome-extension",
@@ -21,9 +23,15 @@
   "license": "MIT",
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.4.0",
+    "@eslint/js": "^10.0.1",
     "@types/chrome": "^0.1.42",
     "@types/node": "^25.8.0",
+    "eslint": "^10.4.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "prettier": "^3.8.3",
     "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.3",
     "vite": "^8.0.13"
   },
   "engines": {
